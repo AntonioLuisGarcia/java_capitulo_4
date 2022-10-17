@@ -15,11 +15,11 @@ public class eje9{
         double x1 = menosb+raiz/2*a; 
         double x2 = menosb-raiz/2*a; 
         //System.out.print(raiz);
-        if(raizdentro<0){
-            System.out.print("La raiz cuadrada no da un numero real prueba con otros digitos");
-        }else{
+        if(raizdentro>=0 && a!=0){
             System.out.println("Un valor de x es "+String.format("%.3f",x1));
             System.out.print("Y otro valor de x es "+String.format("%.3f",x2));
+        }else{
+            System.out.print("La raiz cuadrada no da un numero real prueba con otros digitos");
         }
         sc.close();
         }
