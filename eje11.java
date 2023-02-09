@@ -7,14 +7,14 @@ public class eje11{
         int hora= sc.nextInt();
         System.out.println("Por favor, introduzca los minutos ");
         int min= sc.nextInt();
-        int segundos;
+        sc.close();
+        int segundos = (24-hora)*3600+(60-min)*60;
 
-        if(hora>24 || min>60){
+        /*if(hora>24 || min>60){
             System.out.print("El valor de los datos es incorrecto");
         }else{
-            segundos=(24-hora)*3600+(60-min)*60;
             System.out.print("Quedan "+segundos+" segundos");
-        }
-        sc.close();
+        }*/
+        System.out.println(((hora>24 || min>60)?"El valor de los datos es incorrecto":"QUedan " + segundos + " segundos"));
         }
 }
