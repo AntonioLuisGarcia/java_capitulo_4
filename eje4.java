@@ -4,12 +4,13 @@ public class eje4{
 		Scanner sc = new Scanner(System.in);
         System.out.println("¿Cuantas horas has trabajdo? ");
         int horas= sc.nextInt();
-        if(horas<41 ){
+        sc.close();
+        int sueldoextra= ((horas-40)*16)+480;
+        /*if(horas<41 ){
             System.out.print("Su sueldo es de: "+ horas*12);
         }else{
-            int sueldoextra= ((horas-40)*16)+480;
             System.out.print("Su sueldo es de: "+ sueldoextra);
-        }
-        sc.close();
+        }*/
+        System.out.println(((horas <= 40 )?"Su sueldo es de " + horas*12:"Su sueldo es de :" + sueldoextra));
         }
 }
